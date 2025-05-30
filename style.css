@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #01423b;
+    color: #fdfdfd;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #e2b844;
+}
+.navbar {
+    background-color: #01423b;
+}
+.hero {
+    background-color: #01423b;
+    text-align: center;
+    padding: 100px 20px;
+}
+.btn-primary {
+    background-color: #e2b844;
+    border: none;
+    color: #0f3e36;
+}
+.btn-primary:hover {
+    background-color: #d1a937;
+}
+.section {
+    padding: 60px 20px;
+}
+.card {
+    background-color: #2d6b5f;
+    color: #fdfdfd;
+    border: none;
+}
+
+.ig-icon {
+  color: white;
+  background: #01423b;
+  padding: 15px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.ig-icon:hover {
+  background: #15574a;
+}
+
+footer {
+    background-color: #01423b;
+    color: #e2b844;
+    text-align: center;
+    padding: 20px 0;
+}
