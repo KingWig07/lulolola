@@ -49,6 +49,16 @@ h1, h2, h3 {
 .btn-primary:hover {
     background-color: #d1a937;
 }
+
+.btn-secondary {
+    background-color: #0f3e36;
+    border: none;
+    color: #fff3e6;
+}
+.btn-secondary:hover {
+    background-color: #d1a937;
+}
+
 .section {
     padding: 60px 20px;
 }
