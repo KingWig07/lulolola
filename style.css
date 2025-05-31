@@ -5,16 +5,42 @@ body {
 }
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #e2b844;
+    color: #fff3e6;
 }
 .navbar {
     background-color: #01423b;
 }
-.hero {
-    background-color: #01423b;
-    text-align: center;
-    padding: 100px 20px;
+
+.hero-section {
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  
 }
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.nosotros{
+    background-color: #fff3e6;
+}
+
+.productos{
+    background-color: #fff3e6;
+}
+
 .btn-primary {
     background-color: #e2b844;
     border: none;
@@ -43,9 +69,33 @@ h1, h2, h3 {
   background: #15574a;
 }
 
-footer {
-    background-color: #01423b;
-    color: #e2b844;
-    text-align: center;
-    padding: 20px 0;
+.wave-separator {
+background-color: #fff3e6;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-separator2 {
+background-color: #01423b;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-separator svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.zigzag-separator {
+    background-color: #fff3e6;
+  line-height: 0;
+  overflow: hidden;
+}
+.zigzag-separator svg {
+  width: 100%;
+  height: 100px;
+  display: block;
 }

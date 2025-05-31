@@ -34,22 +34,34 @@
     </nav>
 
     <!-- Sección Hero -->
-    <section class="hero text-center d-flex align-items-center justify-content-center" style="background: url('img/1000_F_1355194178_uM5cF2YKhubFYJvL21bRaYQ2EoQFHBg9.jpg') center/cover no-repeat; height: 100vh; color: white;">
-    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 1rem;">
-        <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">Bienvenidos a Lulo Lola</span></h1>
-        <p class="lead mb-4 animate__animated animate__fadeInUp">Donde cada bocado es una historia de amor, y cada dulce te hace sonreír.</p>
-        <a href="https://wa.me/56930766414?text=Hola%20Lulo%20Lola,%20quiero%20hacer%20un%20pedido" class="btn btn-lg btn-primary px-5 py-3 animate__animated animate__fadeInUp animate__delay-1s">Haz tu pedido</a>
+  <section class="hero-section d-flex align-items-center" style="background-image: url();">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
+        Hecho en casa con amor
+      </h1>
+      <p class="lead animate__animated animate__fadeInUp">
+        Pastelería artesanal con un toque moderno para tus momentos más dulces
+      </p>
+      <a href="#productos" class="btn btn-primary btn-lg mt-3 animate__animated animate__fadeInUp animate__delay-1s">
+        Ver Productos
+      </a>
     </div>
-    </section>
-
+  </section>
 
   <!-- Sección Sobre Nosotros -->
-  <section class="section bg-light text-dark" id="nosotros">
+  <section class="section text-dark nosotros" id="nosotros">
     <div class="container">
-      <h2 class="text-center mb-4">- Sobre Nosotros -</h2>
+      <h2 style="color: #01423b;" class="text-center mb-4">- Sobre Nosotros -</h2>
       <p class="text-center">En Lulo Lola elaboramos pasteles artesanales con amor y los mejores ingredientes. Nuestra pasión es endulzar tus momentos especiales.</p>
     </div>
   </section>
+
+  <!-- Separador -->
+  <div class="wave-separator">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,96L48,106.7C96,117,192,139,288,128C384,117,480,75,576,80C672,85,768,139,864,138.7C960,139,1056,85,1152,64C1248,43,1344,53,1392,58.7L1440,64L1440,150L1392,150C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150L0,150Z" fill="#01423b"></path>
+    </svg>
+  </div>
 
   <!-- Sección Categorías -->
   <section class="section categorias" id="categorias">
@@ -57,7 +69,6 @@
       <h2 class="text-center mb-5">- Categorías -</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         
-        <!-- Tarjeta de categoría (repetida 4 veces con la misma imagen) -->
         <div class="col">
           <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/kuchen1.jpeg'); background-size: cover; background-position: center;">
             <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
@@ -67,53 +78,36 @@
         </div>
         
         <div class="col">
-          <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/galletas1.jpeg'); background-size: cover; background-position: center;">
+          <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/categorias/torta.jpg'); background-size: cover; background-position: center;">
             <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
-              <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Kuchens -</h4>
+              <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Tortas -</h4>
             </div>
           </div>
         </div>
         
         <div class="col">
-          <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/kuchen2.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
-              <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Kuchens -</h4>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/galletas1.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
-              <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Kuchens -</h4>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Otras categorías -->
-        <div class="col">
-          <div class="card bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/kuchen2.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
-              <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Galletas -</h4>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/galletas2.jpeg'); background-size: cover; background-position: center;">
+          <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/categorias/galletas3.jpeg'); background-size: cover; background-position: center;">
             <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
               <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Dulces -</h4>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+    <!-- Separador -->
+  <div class="wave-separator2">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,96L48,106.7C96,117,192,139,288,128C384,117,480,75,576,80C672,85,768,139,864,138.7C960,139,1056,85,1152,64C1248,43,1344,53,1392,58.7L1440,64L1440,150L1392,150C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150L0,150Z" fill="#fff3e6"></path>
+    </svg>
+  </div>
+
   <!-- Sección Productos Destacados -->
-  <section class="section" id="productos">
+  <section class="section productos" id="productos">
     <div class="container">
-      <h2 class="text-center mb-5">- Productos Destacados -</h2>
+      <h2 style="color: #01423b;" class="text-center mb-5">- Productos Destacados -</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         
         <!-- Producto 1 -->
@@ -133,7 +127,7 @@
           <div class="card h-100">
             <img src="img/Kuchen2.jpeg" class="card-img-top" alt="Torta de chocolate">
             <div class="card-body">
-              <h5 class="card-title">Kuchen de manzana</h5>
+              <h5 class="card-title">Chilenitos</h5>
               <p class="card-text">kuchen de manzana, sabor casero, textura suave y ese dorado perfecto que enamora.</p>
               <p class="card-text" style="font-weight: bold;">$12.000</p>
             </div>
@@ -145,8 +139,10 @@
           <div class="card h-100">
             <img src="img/galletas2.jpeg" class="card-img-top" alt="Torta de chocolate">
             <div class="card-body">
-              <h5 class="card-title">Galletas</h5>
-              <p class="card-text">kuchen de manzana, sabor casero, textura suave y ese dorado perfecto que enamora.</p>
+              <h5 class="card-title">Galletas chips de chocolate</h5>
+              <p class="card-text">Galleta de chips de chocolate
+                Crujiente por fuera, suaves por dentro
+                Perfectas para una tarde dulce o un regalo lleno de cariño.</p>
               <p class="card-text" style="font-weight: bold;">$120.000</p>
             </div>
           </div>
@@ -155,9 +151,15 @@
     </div>
   </section>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 Lulo Lola Pastelería. Todos los derechos reservados.</p>
+    <!-- Separador Zigzag -->
+  <div class="zigzag-separator">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,0 L80,50 L160,0 L240,50 L320,0 L400,50 L480,0 L560,50 L640,0 L720,50 L800,0 L880,50 L960,0 L1040,50 L1120,0 L1200,50 L1280,0 L1360,50 L1440,0 L1440,150 L0,150 Z" fill="#01423b"></path>
+    </svg>
+  </div>
+
+  <footer class="text-center mb-3">
+    hola
   </footer>
 
   <!-- Scripts -->
