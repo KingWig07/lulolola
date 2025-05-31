@@ -104,12 +104,53 @@
     </svg>
   </div>
 
-  <!-- Sección Categorías -->
-  <section class="section categorias" id="categorias">
-    <div class="container">
-      <h2 class="text-center mb-5">- Categorías -</h2>
+<!-- Sección Categorías -->
+<section class="section categorias" id="categorias">
+  <div class="container">
+    <h2 class="text-center mb-5">- Categorías -</h2>
+    
+    <!-- Carrusel para móviles -->
+    <div class="d-block d-md-none">
+      <div id="categoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/kuchen1.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
+                <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Kuchens -</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/categorias/torta.jpg'); background-size: cover; background-position: center;">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
+                <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Tortas -</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/categorias/galletas3.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
+                <h4 class="card-title text-center" style="font-family: 'Playfair Display', serif; font-weight: bold;">- Dulces -</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Grid para desktop -->
+    <div class="d-none d-md-block">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        
         <div class="col">
           <div class="card category bg-dark text-white border-0 position-relative" style="height: 250px; background-image: url('img/kuchen1.jpeg'); background-size: cover; background-position: center;">
             <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.4);">
@@ -133,10 +174,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
     <!-- Separador -->
   <div class="wave-separator2">
@@ -145,7 +186,6 @@
     </svg>
   </div>
 
-  <!-- Sección Productos Destacados -->
    <!-- Sección Productos Destacados -->
 <section class="section productos" id="productos">
   <div class="container">
