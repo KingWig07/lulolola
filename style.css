@@ -95,3 +95,23 @@ background-color: #01423b;
   display: block;
 }
 
+.category {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:not(.category) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:not(.category):hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: background-color 0.3s ease;
+}
