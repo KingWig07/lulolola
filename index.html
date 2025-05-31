@@ -19,19 +19,28 @@
 
 <body>
   <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="Lulo Lola" class="img-fluid" style="height: 170px; width: auto;">
-        </a>
-        <div class="d-flex align-items-center">
-        <!-- Ícono de Instagram (link al perfil) -->
-        <a href="https://www.instagram.com/lulolola.cl/" class="text-white me-3">
-            <i class="fab fa-instagram fa-2x ig-icon"></i>
-        </a>
-        </div>
-    </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Añadido bg-dark para fondo oscuro -->
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Lulo Lola" class="img-fluid" style="max-height: 120px;"> <!-- Altura más razonable -->
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span> <!-- Botón para móviles -->
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="navbar-nav align-items-center"> <!-- Mejor estructura para items -->
+                  <a class="nav-link px-3" href="#">Nosotros</a> <!-- Añadido nav-link y padding -->
+                  <a class="nav-link px-3" href="#">Productos</a>
+                  <!-- Ícono de Instagram -->
+                  <a href="https://www.instagram.com/lulolola.cl/" class="nav-link px-3" target="_blank">
+                      <i class="fab fa-instagram fa-lg ig-icon"></i> <!-- Tamaño más moderado -->
+                  </a>
+              </div>
+          </div>
+      </div>
+  </nav>
 
     <!-- Sección Hero -->
   <section class="hero-section d-flex align-items-center" style="background-image: url();">
@@ -47,14 +56,47 @@
       </a>
     </div>
   </section>
+  <!-- Separador tipo circo con semicírculos -->
+  <div class="circus-separator">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="semi-circles" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+          <circle cx="30" cy="60" r="30" fill="#fff3e6" />
+        </pattern>
+      </defs>
+      <rect width="1440" height="60" fill="url(#semi-circles)" />
+    </svg>
+  </div>
+
 
   <!-- Sección Sobre Nosotros -->
-  <section class="section text-dark nosotros" id="nosotros">
+  <section class="section text-dark nosotros py-5" id="nosotros" style="background-color: #fff3e6;">
     <div class="container">
-      <h2 style="color: #01423b;" class="text-center mb-4">- Sobre Nosotros -</h2>
-      <p class="text-center">En Lulo Lola elaboramos pasteles artesanales con amor y los mejores ingredientes. Nuestra pasión es endulzar tus momentos especiales.</p>
+      <h2 class="text-center mb-5" style="color: #01423b;">- Sobre Nosotros -</h2>
+
+      <div class="row align-items-center">
+        <!-- Imagen o ilustración -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/categorias/galletas3-removebg-preview.png" alt="Pasteles artesanales Lulo Lola" class="img-fluid rounded">
+        </div>
+
+        <!-- Texto descriptivo -->
+        <div class="col-md-6">
+          <h4 class="mb-3" style="color: #01423b;">Pasión por lo artesanal</h4>
+          <p>Somos una pastelería familiar con el corazón en cada receta. En <strong>Lulo Lola</strong>, cada pastel es una historia hecha con ingredientes naturales, sin aditivos, y con ese toque casero que nos diferencia.</p>
+
+          <h5 class="mt-4" style="color: #01423b;">Nuestros valores:</h5>
+          <ul class="list-unstyled">
+            <li>Amor por lo que hacemos</li>
+            <li>Ingredientes de calidad y frescura</li>
+            <li>Creatividad y tradición en cada diseño</li>
+            <li>Compromiso con nuestros clientes</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
+
 
   <!-- Separador -->
   <div class="wave-separator">
@@ -150,17 +192,47 @@
       </div>
     </div>
   </section>
+  <!-- Separador tipo circo con semicírculos invertidos -->
+<div class="circus-separator">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="semi-circles-inverted" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+        <circle cx="30" cy="0" r="30" fill="#fff3e6" />
+      </pattern>
+    </defs>
+    <rect width="1440" height="60" fill="url(#semi-circles-inverted)" />
+  </svg>
+</div>
 
-    <!-- Separador Zigzag -->
-  <div class="zigzag-separator">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L80,50 L160,0 L240,50 L320,0 L400,50 L480,0 L560,50 L640,0 L720,50 L800,0 L880,50 L960,0 L1040,50 L1120,0 L1200,50 L1280,0 L1360,50 L1440,0 L1440,150 L0,150 Z" fill="#01423b"></path>
-    </svg>
+<footer class="text-white py-4" style="background-color: #01423b;">
+  <div class="container">
+
+    <!-- Primera fila: logo e Instagram -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+      <!-- Logo a la izquierda -->
+      <div class="mb-3 mb-md-0">
+        <img src="img/logo.png" alt="Lulo Lola Logo" style="max-height: 200px;">
+      </div>
+
+      <!-- Síguenos + Instagram a la derecha -->
+      <div class="d-flex align-items-center gap-2">
+        <span class="fw-light">Síguenos</span>
+        <a href="https://www.instagram.com/lulolola.cl/" target="_blank" class="text-white fs-5">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Segunda fila: texto centrado abajo -->
+    <div class="text-center">
+      <p class="mb-0">© 2023 Lulo Lola Pastelería. Todos los derechos reservados.</p>
+      <p class="mb-0">Diseñado por Vicente Canio</p>
+    </div>
+
   </div>
+</footer>
 
-  <footer class="text-center mb-3">
-    hola
-  </footer>
+
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
